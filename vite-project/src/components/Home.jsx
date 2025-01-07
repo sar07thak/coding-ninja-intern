@@ -7,12 +7,12 @@ export const Home = () => {
   return (
     <>
       <div
-        className="relative z-[-1] top-20  bg-cover bg-center text-white"
+        className="relative z-[-1] bg-cover bg-center text-white"
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className=" w-full top-20  flex flex-col justify-center items-center">
           <h1
-            className="text-2xl mt-20 font-bold text-transparent bg-clip-text 
+            className="text-2xl mt-36 font-bold text-transparent bg-clip-text 
                    bg-gradient-to-r from-green-400 via-yellow-400 to-red-400
                    animate-gradient-text"
             style={{
