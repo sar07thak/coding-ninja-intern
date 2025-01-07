@@ -139,6 +139,7 @@ export const Navbar = () => {
                 <div className="mt-8">
                   <p className="mb-5">Enter E-mail</p>
                   <input
+                    type="email"
                     className="w-full py-4 px-6 flex justify-center items-center gap-5 mb-5 border border-black rounded-lg active:border-slate-200 placeholder:text-gray-600"
                     placeholder="Enter email here"
                   />
