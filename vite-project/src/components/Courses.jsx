@@ -10,27 +10,49 @@ export const Courses = () => {
   const boxRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(boxRef.current, {
-      scrollTrigger: {
-        trigger: boxRef.current, // Element that triggers the animation
-        start: "top 60%", // Start when the top of the element is 80% down the viewport
-        end: "top 0", // End when the top of the element is 30% down the viewport
-        scrub: 1, // Smooth scrubbing (syncs animation to scroll position)
-        markers: false, // Display debugging markers
-      },
-      // scaleY : 1, 
-      transformOrigin : "top" ,
-      ease:"power1.out",
-      y: 500, // Moves the element 500px down along the Y-axis
-      duration: 5 // Rotates the element
+    const mm = gsap.matchMedia();
+
+    // Define animation for laptop view
+    mm.add("(min-width: 768px)", () => {
+      gsap.to(boxRef.current, {
+        scrollTrigger: {
+          trigger: boxRef.current, // Element that triggers the animation
+          start: "top 60%", // Start when the top of the element is 60% down the viewport
+          end: "top 0", // End when the top of the element is at the top of the viewport
+          scrub: 1, // Smooth scrubbing
+          markers: false, // Disable debugging markers
+        },
+        y: 400, // Moves the element 400px down
+        transformOrigin: "top",
+        duration: 10 ,
+        ease: "back",
+      });
     });
+
+    // Define animation for mobile view
+    mm.add("(max-width: 767px)", () => {
+      gsap.to(boxRef.current, {
+        scrollTrigger: {
+          trigger: boxRef.current, // Element that triggers the animation
+          start: "top 80%", // Start when the top of the element is 80% down the viewport
+          end: "top 20%", // End when the top of the element is 20% down the viewport
+          scrub: 1, // Smooth scrubbing
+          markers: false, // Disable debugging markers
+        },
+        y: 600, // Moves the element 200px down (less movement for smaller screens)
+        transformOrigin: "top",
+        duration : 10 ,
+        ease: "back",
+      });
+    });
+
   }, []);
 
   return (
     <>
       <div className="progress-bar h-36 border-l-2 z-[1] border-black absolute left-[10px] md:left-[250px] " ref={boxRef}></div>
       <div className="relative z-[-1] bg-cover bg-center  flex justify-center  items-center p-20 md:p-10 md:gap-16 gap-10">
-      <div className="track absolute left-[10px] md:left-[250px] top-0 border-gray-400 border-l-2 border-dotted h-screen ">
+      <div className="track absolute left-[10px] md:left-[250px] top-0 border-gray-400 border-l-2 border-dotted h-[90%] ">
       </div>
         <div>
             <h1 className=" text-7xl md:text-8xl font-bold mb-10 text-[#E3E3E3]  ">OUR OFFERINGS</h1>
@@ -72,36 +94,11 @@ export const Courses = () => {
                   </div>
                 </div>
             </div>
-            <div>
-              IIT Certifications
-            </div>
-            <div>
-              For graduates
-            </div>
-            <div>
-              <div>PG Certification in Data Analytics</div>
-              <div>E&ICT Academy , IIT Guwahati</div>
-            </div>
-            <div>
-              For College Students
-            </div>
-            <div>
-              <div>Traning and internsgip Certification in Advanced DSA</div>
-              <div>E&ICT Academy, IIT Guwahati</div>
-            </div>
-            <div>
-              <div>Traning and internsgip Certification in Data Analytics</div>
-              <div>E&ICT Academy, IIT Guwahati</div>
+            <div className="text-lg font-semibold mt-20">
+              👉 IIT Certifications
             </div>
         </div>
       </div>
     </>
   );
 };
-
-// <div
-//         ref={boxRef}
-//         className="w-20 h-20 bg-blue-500 text-white flex items-center justify-center"
-//       >
-//         Scroll Me
-//       </div>

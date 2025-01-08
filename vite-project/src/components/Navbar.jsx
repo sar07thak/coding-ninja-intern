@@ -24,7 +24,7 @@ export const Navbar = () => {
   };
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 border-b h-20 text-gray-700 bg-white shadow-md">
+      <div className="fixed top-0 left-0 right-0 border-b h-20 text-gray-700 bg-white z-10 shadow-md">
         <div className="h-full flex justify-between items-center md:mx-60 px-4 md:px-10 ">
           <div className="flex items-center w-[65%] justify-between">
             <h1 className=" font-bold">
