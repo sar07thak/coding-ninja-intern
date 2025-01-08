@@ -51,11 +51,11 @@ export const Courses = () => {
   return (
     <>
       <div className="progress-bar h-36 border-l-2 z-[1] border-black absolute left-[10px] md:left-[250px] " ref={boxRef}></div>
-      <div className="relative z-[-1] bg-cover bg-center  flex justify-center  items-center p-20 md:p-10 md:gap-16 gap-10">
+      <div className="relative z-[-1] bg-cover bg-center  flex justify-center  items-center px-10 py-5 md:p-10 md:gap-16 gap-10">
       <div className="track absolute left-[10px] md:left-[250px] top-0 border-gray-400 border-l-2 border-dotted h-[90%] ">
       </div>
         <div>
-            <h1 className=" text-7xl md:text-8xl font-bold mb-10 text-[#E3E3E3]  ">OUR OFFERINGS</h1>
+            <h1 className=" text-7xl md:text-8xl font-bold mb-10 text-[#E3E3E3]">OUR OFFERINGS</h1>
             <div className="flex  absolute md:top-44  gap-5 *">
                 <p className="text-lg font-semibold ">👉 Job Bootcamp</p>
                 <div className=" bg-[#E6ECFC] px-5 font-semibold py-.5 rounded-r-full ">For graduates</div>

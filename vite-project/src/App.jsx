@@ -7,10 +7,12 @@ import { IItCertificate } from "./components/IItCertificate";
 export const App = () => {
   return (
     <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Home/>
       <Courses />
       <IItCertificate />
+    </div>
     </>
   );
 };
