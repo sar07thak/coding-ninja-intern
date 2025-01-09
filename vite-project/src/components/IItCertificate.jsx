@@ -88,7 +88,7 @@ export const IItCertificate = () => {
               <div className="font-bold text-2xl mb-5 text-gray-300">
                 PG Certification in Data Analytics
               </div>
-              <div className="text-md font-semibold text-gray-300 mb-5">
+              <div className="text-md font-semibold text-gray-300 md:mb-12 mb-3">
                 E&ICT Academy , IIT Guwahati
               </div>
               <div className="rounded-xl h-9 text-gray-700 p-2 flex justify-between bg-[#FEFEFE] items-center shadow-lg shadow-[#222] ">

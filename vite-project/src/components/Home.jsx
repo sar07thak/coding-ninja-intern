@@ -9,7 +9,7 @@ export const Home = () => {
       <div
         className="relative z-[-1] bg-cover bg-center text-white"
         style={{ backgroundImage: `url(${background})` }}
-      >
+      > 
         <div className=" w-full top-20  flex flex-col justify-center items-center">
           <h1
             className="text-2xl mt-36 font-bold text-transparent bg-clip-text 

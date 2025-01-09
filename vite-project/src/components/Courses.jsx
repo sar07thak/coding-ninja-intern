@@ -22,10 +22,10 @@ export const Courses = () => {
           scrub: 1, // Smooth scrubbing
           markers: false, // Disable debugging markers
         },
-        y: 400, // Moves the element 400px down
-        transformOrigin: "top",
+        height : "80%", // Moves the element 400px down
+        // transformOrigin: "top",
         duration: 10 ,
-        ease: "back",
+        ease: "linear",
       });
     });
 
@@ -39,7 +39,7 @@ export const Courses = () => {
           scrub: 1, // Smooth scrubbing
           markers: false, // Disable debugging markers
         },
-        y: 600, // Moves the element 200px down (less movement for smaller screens)
+        height : "84%" , // Moves the element 200px down (less movement for smaller screens)
         transformOrigin: "top",
         duration : 10 ,
         ease: "back",
@@ -50,9 +50,9 @@ export const Courses = () => {
 
   return (
     <>
-      <div className="progress-bar h-36 border-l-2 z-[1] border-black absolute left-[10px] md:left-[250px] " ref={boxRef}></div>
+      <div className="progress-bar  border-l-2 z-[1] border-orange-500 absolute left-[10px] md:left-[250px] " ref={boxRef}></div>
       <div className="relative z-[-1] bg-cover bg-center  flex justify-center  items-center px-10 py-5 md:p-10 md:gap-16 gap-10">
-      <div className="track absolute left-[10px] md:left-[250px] top-0 border-gray-400 border-l-2 border-dotted h-[90%] ">
+      <div className="track absolute left-[10px] md:left-[250px] top-0 border-gray-700 border-l-2 border-dotted h-[90%] ">
       </div>
         <div>
             <h1 className=" text-7xl md:text-8xl font-bold mb-10 text-[#E3E3E3]">OUR OFFERINGS</h1>
