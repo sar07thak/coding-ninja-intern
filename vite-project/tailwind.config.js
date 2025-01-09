@@ -18,5 +18,34 @@ export default {
       },     
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-border': {
+          color: 'transparent', /* Transparent text */
+          '-webkit-text-stroke': '2px #6b7280', /* White border */
+        },
+        '.text-border-black': {
+          color: 'transparent',
+          '-webkit-text-stroke': '2px #000000', /* Black border */
+        },
+      });
+    },
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-shadow': {
+          'text-shadow': '2px 2px 0px #6b7280', /* Example shadow */
+        },
+        '.text-shadow-md': {
+          'text-shadow': '3px 3px 6px rgba(0, 0, 0, 0.4)',
+        },
+        '.text-shadow-lg': {
+          'text-shadow': '4px 4px 8px rgba(107 , 114, 128 , 0.2)',
+        },
+        '.text-shadow-none': {
+          'text-shadow': 'none',
+        },
+      });
+    },
+  ],
 }

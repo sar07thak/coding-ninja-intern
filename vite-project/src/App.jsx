@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { Courses } from "./components/Courses";
 import { IItCertificate } from "./components/IItCertificate";
 import { ScrollerPart1 } from "./components/ScrollerPart1";
+import { ScrollerPart2 } from "./components/ScrollerPart2";
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
       <Courses />
       <IItCertificate />
       <ScrollerPart1 />
+      <ScrollerPart2 />
     </div>
     </>
   );

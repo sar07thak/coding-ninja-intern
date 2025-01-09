@@ -46,10 +46,10 @@ export const ScrollerPart1 = () => {
         className="text-white relative md:p-20 py-10 flex flex-col justify-center bg-cover items-center"
         style={{ backgroundImage: `url(${bg1})` }}
       >
-        <div className="flex justify-center items-center md:gap-10 gap-5 flex-col">
+        <div className="flex justify-center items-center md:gap-16 gap-5 flex-col">
 
           <div
-            className="flex flex-col items-center scroll-text gap-4 w-full"
+            className="flex flex-col items-center scroll-text gap-10 w-full"
              // Assigning ref for the first section
           >
             <h1 className="text-4xl md:text-7xl font-bold" ref={(el) => (scrollTextRefs.current[0] = el)}>9 years of</h1>
@@ -58,7 +58,7 @@ export const ScrollerPart1 = () => {
           </div>
 
           <div
-            className="flex flex-col items-center scroll-text gap-4 w-full"
+            className="flex flex-col items-center scroll-text gap-10 w-full"
             ref={(el) => (scrollTextRefs.current[3] = el)} // Assigning ref for the second section
           >
             <div className="h-24 w-24 rounded-2xl bg-violet-800 flex justify-center items-center">
@@ -66,7 +66,7 @@ export const ScrollerPart1 = () => {
                 <FaBookReader />
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center gap-2 items-center">
               <h1 className="text-4xl md:text-7xl font-bold">
                 1.5 Lac + Learners
               </h1>
@@ -77,7 +77,7 @@ export const ScrollerPart1 = () => {
           </div>
 
           <div
-            className="flex flex-col items-center scroll-text gap-4 w-full"
+            className="flex flex-col items-center scroll-text gap-10 w-full"
             ref={(el) => (scrollTextRefs.current[4] = el)} // Assigning ref for the third section
           >
             <div className="h-24 w-24 flex justify-center items-center rounded-2xl bg-green-400">
@@ -85,7 +85,7 @@ export const ScrollerPart1 = () => {
                 <GiOfficeChair />
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center gap-4 items-center">
               <h1 className="text-4xl md:text-7xl font-bold">
                 1400 Alumni in MAANG
               </h1>
@@ -96,7 +96,7 @@ export const ScrollerPart1 = () => {
           </div>
 
           <div
-            className="flex flex-col items-center scroll-text gap-4 w-full"
+            className="flex flex-col items-center scroll-text gap-10 w-full"
             ref={(el) => (scrollTextRefs.current[5] = el)} // Assigning ref for the fourth section
           >
             <div className="h-24 w-24 flex justify-center items-center rounded-2xl bg-pink-400">
@@ -105,7 +105,7 @@ export const ScrollerPart1 = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-4xl md:text-7xl font-bold">
+              <h1 className="text-4xl md:text-7xl font-bold gap-4">
                 1 Cr+ highest CTC
               </h1>
               <p className="text-sm font-light md:text-lg text-gray-400">
@@ -115,7 +115,7 @@ export const ScrollerPart1 = () => {
           </div>
 
           <div
-            className="flex flex-col items-center scroll-text gap-4 w-full"
+            className="flex flex-col items-center scroll-text gap-10 w-full"
             ref={(el) => (scrollTextRefs.current[6] = el)} // Assigning ref for the fifth section
           >
             <div className="h-24 w-24 flex justify-center items-center rounded-2xl bg-blue-400">
@@ -123,7 +123,7 @@ export const ScrollerPart1 = () => {
                 <BsGraphUpArrow />
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center gap-4 items-center">
               <h1 className="text-4xl md:text-7xl font-bold">
                 128% Average hike
               </h1>
