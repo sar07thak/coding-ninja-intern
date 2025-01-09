@@ -6,6 +6,7 @@ import { GiOfficeChair } from "react-icons/gi";
 import bg1 from "../assets/bg_testi.jpg";
 import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,10 +43,11 @@ export const ScrollerPart1 = () => {
   return (
     <>
       <div
-        className="text-white relative md:p-20 py-10"
+        className="text-white relative md:p-20 py-10 flex flex-col justify-center bg-cover items-center"
         style={{ backgroundImage: `url(${bg1})` }}
       >
         <div className="flex justify-center items-center md:gap-10 gap-5 flex-col">
+
           <div
             className="flex flex-col items-center scroll-text gap-4 w-full"
              // Assigning ref for the first section
@@ -129,6 +131,13 @@ export const ScrollerPart1 = () => {
                 Via after placement call
               </p>
             </div>
+          </div>
+
+        </div>
+        <div className="mt-20 w-56 p-4 bg-orange-500 hover:bg-orange-400 cursor-pointer rounded-xl  flex justify-center gap-1  items-center ">
+          <p>Explore Offering</p>
+          <div className="text-3xl ">
+          <MdOutlineKeyboardArrowUp />
           </div>
         </div>
       </div>
