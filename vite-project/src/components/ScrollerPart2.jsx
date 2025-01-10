@@ -87,7 +87,7 @@ export const ScrollerPart2 = () => {
           </div>
         </div>
         {/* 2ND PART OF THE PAGE WHERE WE ADD A BACKGROUND */}
-        <div className="bg-[#15181A] h-[200px] w-full ">
+        <div className="bg-[#15181A] h-[50px]  w-full ">
         </div>
         {/* oUR_STATS SECTION */}
         <div className="w-full p-0 py-5  md:p-10">

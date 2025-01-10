@@ -20,7 +20,8 @@ export const OurStats = () => {
       {
         width: '100%',
         duration: 1,
-        ease: "power2.out",
+        delay : .5,
+        ease: "linear",
       }
     );
 
@@ -28,7 +29,8 @@ export const OurStats = () => {
       newProgressref.current,
       { width: "0%" },
       {
-        width: '60%',
+        width: '70%',
+        delay : .5 ,
         duration: 1,
         ease: "power2.out",
       }
@@ -110,7 +112,7 @@ export const OurStats = () => {
 
             {/* progress-bar-content */}
             <div className="flex justify-between items-center gap-12 px-1 md:px-5 mt-20">
-              <img src={logoCN} alt="" className="md:h-10 h-5 w-40 " />
+              <img src={logoCN} alt="" className="md:h-10 h-5 w-40 md:w-60 " />
               <p className="flex items-center md:gap-3 gap-1 text-sm text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 font-semibold">
                 Your dream role, faster and with confidence
                 <span>
