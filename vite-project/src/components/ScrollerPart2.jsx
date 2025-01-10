@@ -8,6 +8,7 @@ import { HiOutlineSpeakerXMark } from "react-icons/hi2";
 import doubticon from "../assets/doubtimg.png";
 import iiticon from "../assets/standfordimg.png";
 import placementicon from "../assets/placement.png";
+import { OurStats } from "./OurStats";
 
 export const ScrollerPart2 = () => {
   const [video , setVideo ] = useState(doubt);
@@ -21,9 +22,10 @@ export const ScrollerPart2 = () => {
   return (
     <>
       <div
-        className="text-white relative md:p-5 flex flex-col justify-center md:bg-contain bg-cover  items-center "
+        className="text-white relative  flex flex-col justify-center bg-cover  items-center "
         style={{ backgroundImage: `url(${bg2})` }}
       >
+        {/* 1st part of the section where we store WHY US content */}
         <div className=" w-full h-full flex flex-col items-center">
           <div class=" md:text-[250px] text-[110px] font-sans md:tracking-[1px] md:text-border font-bold md:text-transparent text-[#877d7de1] ">
             WHY US
@@ -83,6 +85,13 @@ export const ScrollerPart2 = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* 2ND PART OF THE PAGE WHERE WE ADD A BACKGROUND */}
+        <div className="bg-[#15181A] h-[200px] w-full ">
+        </div>
+        {/* oUR_STATS SECTION */}
+        <div className="w-full p-0 py-5  md:p-10">
+          <OurStats />
         </div>
       </div>
     </>
