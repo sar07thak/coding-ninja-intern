@@ -9,6 +9,8 @@ import { SliderCompo } from "./components/SliderCompo";
 import { Review } from "./components/Review";
 // import { Demo } from "./components/Demo";
 import { LearningModel } from "./components/LearningModel";
+import { PageAfterLearningModel } from "./components/PageAfterLearningModel";
+import { Demo } from "./components/Demo";
 
 export const App = () => {
   return (
@@ -23,6 +25,8 @@ export const App = () => {
       <SliderCompo />
       <Review />
       <LearningModel />
+      <PageAfterLearningModel />
+      <Demo />
     </div>
     </>
   );
