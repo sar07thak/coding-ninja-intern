@@ -34,7 +34,7 @@ export const Review = () => {
           scrub: 1, // Smooth scrubbing
           markers: false, // Disable debugging markers
         },
-        height : "150%", // Moves the element 400px down
+        height : "149%", // Moves the element 400px down
         // transformOrigin: "top",
         duration: 10 ,
         ease: "power1.in",

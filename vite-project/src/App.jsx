@@ -7,7 +7,8 @@ import { ScrollerPart1 } from "./components/ScrollerPart1";
 import { ScrollerPart2 } from "./components/ScrollerPart2";
 import { SliderCompo } from "./components/SliderCompo";
 import { Review } from "./components/Review";
-import { Demo } from "./components/Demo";
+// import { Demo } from "./components/Demo";
+import { LearningModel } from "./components/LearningModel";
 
 export const App = () => {
   return (
@@ -21,7 +22,7 @@ export const App = () => {
       <ScrollerPart2 />
       <SliderCompo />
       <Review />
-      <Demo />
+      <LearningModel />
     </div>
     </>
   );
