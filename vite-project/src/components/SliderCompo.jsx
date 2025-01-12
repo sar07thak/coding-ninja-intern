@@ -27,7 +27,7 @@ export const SliderCompo = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false,
         }
       },
       {
@@ -65,7 +65,7 @@ export const SliderCompo = () => {
                   <img
                     src={currentElement.profilePhoto[0]}
                     alt={`Profile ${index + 1}`}
-                    className="m-auto  h-32 w-32 absolute bottom-36 border shadow-2xl shadow-gray-200 rounded-full md:left-9 left-28  "
+                    className="m-auto  h-32 w-32 absolute bottom-36 border shadow-2xl shadow-gray-200 rounded-full md:left-9 sm:left-11 left-28  "
                   />
                   <p className="mt-24 font-semibold text-md text-center text-[#9A9B9C]">{currentElement.college}</p>
                   <img

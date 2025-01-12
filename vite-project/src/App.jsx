@@ -6,6 +6,8 @@ import { IItCertificate } from "./components/IItCertificate";
 import { ScrollerPart1 } from "./components/ScrollerPart1";
 import { ScrollerPart2 } from "./components/ScrollerPart2";
 import { SliderCompo } from "./components/SliderCompo";
+import { Review } from "./components/Review";
+import { Demo } from "./components/Demo";
 
 export const App = () => {
   return (
@@ -18,6 +20,8 @@ export const App = () => {
       <ScrollerPart1 />
       <ScrollerPart2 />
       <SliderCompo />
+      <Review />
+      <Demo />
     </div>
     </>
   );
