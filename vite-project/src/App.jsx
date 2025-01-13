@@ -7,10 +7,11 @@ import { ScrollerPart1 } from "./components/ScrollerPart1";
 import { ScrollerPart2 } from "./components/ScrollerPart2";
 import { SliderCompo } from "./components/SliderCompo";
 import { Review } from "./components/Review";
-// import { Demo } from "./components/Demo";
 import { LearningModel } from "./components/LearningModel";
 import { PageAfterLearningModel } from "./components/PageAfterLearningModel";
-import { Demo } from "./components/Demo";
+import { Mentor_faculty } from "./components/Mentor_faculty";
+import { Mentor_faculty2 } from "./components/Mentor_faculty2";
+import { Mentor_faculty3 } from "./components/Mentor_faculty3";
 
 export const App = () => {
   return (
@@ -26,7 +27,9 @@ export const App = () => {
       <Review />
       <LearningModel />
       <PageAfterLearningModel />
-      <Demo />
+      <Mentor_faculty />
+      <Mentor_faculty2 />
+      <Mentor_faculty3 />
     </div>
     </>
   );
