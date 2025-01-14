@@ -13,6 +13,7 @@ import { Mentor_faculty } from "./components/Mentor_faculty";
 import { Mentor_faculty2 } from "./components/Mentor_faculty2";
 import { Mentor_faculty3 } from "./components/Mentor_faculty3";
 import { Spotlight } from "./components/Spotlight";
+import { Certificate } from "./components/Certificate";
 
 export const App = () => {
   return (
@@ -32,6 +33,7 @@ export const App = () => {
       <Mentor_faculty2 />
       <Mentor_faculty3 />
       <Spotlight />
+      <Certificate />
     </div>
     </>
   );
