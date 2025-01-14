@@ -12,6 +12,7 @@ import { PageAfterLearningModel } from "./components/PageAfterLearningModel";
 import { Mentor_faculty } from "./components/Mentor_faculty";
 import { Mentor_faculty2 } from "./components/Mentor_faculty2";
 import { Mentor_faculty3 } from "./components/Mentor_faculty3";
+import { Spotlight } from "./components/Spotlight";
 
 export const App = () => {
   return (
@@ -30,6 +31,7 @@ export const App = () => {
       <Mentor_faculty />
       <Mentor_faculty2 />
       <Mentor_faculty3 />
+      <Spotlight />
     </div>
     </>
   );
