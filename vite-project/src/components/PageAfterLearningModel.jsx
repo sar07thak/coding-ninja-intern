@@ -96,10 +96,10 @@ export const PageAfterLearningModel = () => {
   return (
     <>
       <div
-        className="progress-bar border-l-2 z-[7] border-[#FFC147] absolute md:left-[251px]"
+        className="progress-bar border-l-2 z-[7] border-[#FFC147] hidden md:flex absolute md:left-[251px]"
         ref={boxRef}
       ></div>
-      <div className="border border-red-500 bg-[#141414] relative z-[-1] flex flex-col item-center md:py-10 md:px-56 ">
+      <div className=" bg-[#141414] relative z-[-1] flex flex-col item-center md:py-10 md:px-56 ">
         <div className="track z-[1] h-[100%] absolute top-0 left-[10px] md:left-[250px] border-gray-700 border-l-2 md:border-dotted border-none "></div>
         <div className="flex text-white items-center text-lg gap-5 md:mb-8 mt-6 ">
           {/* <img src={heart} alt="" className='h-10 w-10 rounded-xl absolute z-[-20]' /> */}

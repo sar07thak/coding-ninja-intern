@@ -38,25 +38,25 @@ export const Mentor_faculty3 = () => {
     slidesToScroll: 1,
     pauseOnHover: true,
     swipeToSlide: true,
-    centerMode: true,
-    centerPadding: "30px",
+    centerMode: false,
+    centerPadding: "60px",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         dots: false,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 2,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          // initialSlide: 2,
         },
       },
       {
@@ -73,17 +73,20 @@ export const Mentor_faculty3 = () => {
   return (
     <>
       <div
-        className="progress-bar border-l-2 z-[7] border-orange-500 absolute md:left-[250px]"
+        className="progress-bar border-l-2 z-[7] border-orange-500 absolute  md:left-[250px]"
         ref={boxRef}
       ></div>
-      <div className="px-56 py-10 relative z-[-1]  h-screen">
-        <div className="track z-[1] h-full absolute top-0 left-[10px] md:left-[250px] border-gray-500 border-l-2 md:border-dotted border-none "></div>
-        <div className="h-[500px] px-8 py-5 mt-44 text-xl font-semibold">
+      <div className="md:px-56 py-10 relative z-[-1]  h-screen">
+        <div className="track z-[1] h-full absolute top-[-5px] left-[10px] md:left-[251px] border-gray-500 border-l-2 md:border-dotted border-none "></div>
+        <div className="h-[500px] px-8 py-5 md:mt-44 mt-60 text-xl font-semibold">
           <p>👉 Faculty that brings out the best in you</p>
           <div className=" my-5 p-5 h-[400px]">
             <Slider {...settings}>
               {Faculty.map((currentElement, index) => (
-                <div key={index} className="mb-20 h-[350px] px-4 py-2">
+                <div
+                  key={index}
+                  className="mb-20 h-[350px] md:px-4 px-1 py-2  "
+                >
                   <div className="shadow-xl flex flex-col rounded-2xl py-4 ">
                     <img
                       src={currentElement.profilephoto}

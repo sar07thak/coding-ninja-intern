@@ -33,17 +33,24 @@ export const Mentor_faculty2 = () => {
         className="progress-bar border-l-2 z-[7] border-orange-500 absolute md:left-[250px]"
         ref={boxRef}
       ></div>
-      <div className=" px-56 py-10 relative z-[-1] h-[200px]">
-        <div className="track z-[1] h-full absolute top-0 left-[10px] md:left-[250px] border-gray-500 border-l-2 md:border-dotted border-none "></div>
-            <img src={wire} alt="" className="absolute left-[250px] top-[-70px]" />
+      <div className="md:px-56 md:py-10 relative  mt-[460px] md:mt-0 z-[-1] h-[200px]">
+        <div className="track z-[1] h-full  absolute top-0   md:left-[250px]  border-l-2 md:border-dotted border-none border-gray-500"></div>
+        <img
+          src={wire}
+          alt=""
+          className="absolute md:left-[250px] md:top-[-70px] top-[50px]"
+        />
         <div className="h-32 flex justify-between px-10 relative ">
-            <div className=" pl-14 pt-10 ">
-                <h1 className="text-xl font-semibold">👉 Learn by doing</h1>
-                <p className="px-7 text-sm text-gray-500">Interesting projects to help you standout to recruiters </p>
-            </div>
+          <div className=" pl-14 md:pt-10 sm:pt-44 pt-48 ">
+            <h1 className="md:text-xl text-2xl font-semibold">
+              👉 Learn by doing
+            </h1>
+            <p className="md:px-7 px-10 md:text-sm text-gray-500">
+              Interesting projects to help you standout to recruiters{" "}
+            </p>
           </div>
+        </div>
       </div>
     </>
   );
 };
-
