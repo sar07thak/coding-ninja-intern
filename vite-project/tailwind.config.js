@@ -17,6 +17,9 @@ export default {
         },
       },     
     },
+    backgroundImage: {
+      'custom-gradient': 'linear-gradient(286deg, #262121 9.3%, #ae8975 331.33%)',
+    },
   },
   plugins: [
     function ({ addUtilities }) {
