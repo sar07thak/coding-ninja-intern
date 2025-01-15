@@ -15,6 +15,7 @@ import { Mentor_faculty3 } from "./components/Mentor_faculty3";
 import { Spotlight } from "./components/Spotlight";
 import { Certificate } from "./components/Certificate";
 import { FooterPart1 } from "./components/FooterPart1";
+import { FooterPart2 } from "./components/FooterPart2";
 
 export const App = () => {
   return (
@@ -36,6 +37,7 @@ export const App = () => {
       <Spotlight />
       <Certificate />
       <FooterPart1 />
+      <FooterPart2 />
     </div>
     </>
   );

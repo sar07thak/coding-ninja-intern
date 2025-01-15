@@ -14,7 +14,7 @@ export const FooterPart1 = () => {
         <img
           src={moutainLaptop}
           alt=""
-          className="absolute left-0 hidden h-[600px] md:flex  bottom-0"
+          className="absolute left-0 hidden h-[400px] md:flex  bottom-0"
         />
         <img src={moutainmobile} alt="" className="absolute right-0 flex w-[200px] h-screen md:hidden  bottom-0" />
         <div className=" max-w-7xl mx-auto">
@@ -112,7 +112,7 @@ export const FooterPart1 = () => {
             </div>
 
             {/* Mobile Accordion for Navigation (Optional) */}
-            <div className="mt-8 pt-8 border-t border-gray-700 lg:hidden">
+            <div className="mt-8 pt-8  lg:hidden">
               <div className="grid grid-cols-1 gap-4">
                 <details className="group">
                   <summary className="flex justify-between items-center cursor-pointer list-none">
