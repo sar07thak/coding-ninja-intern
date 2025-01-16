@@ -12,30 +12,30 @@ export const OurStats = () => {
   const progressBarRef = useRef(null);
   const newProgressref = useRef(null);
 
-
-  useEffect(()=>{
+  useEffect(() => {
     gsap.fromTo(
       progressBarRef.current,
       { width: "0%" },
       {
-        width: '100%',
+        width: "100%",
         duration: 1,
-        delay : .5,
+        delay: 0.3,
         ease: "linear",
       }
     );
 
-    gsap.fromTo(
-      newProgressref.current,
-      { width: "0%" },
-      {
-        width: '70%',
-        delay : .5 ,
-        duration: 1,
-        ease: "power2.out",
-      }
-    );
-  },[])
+  //   gsap.fromTo(
+  //     newProgressref.current,
+  //     { width: "0%" },
+  //     {
+  //       width: "70%",
+  //       delay: 0.3,
+  //       duration: 1,
+  //       ease: "power2.out",
+  //     }
+  //   );
+  
+  }, []);
 
   return (
     <>
@@ -109,42 +109,37 @@ export const OurStats = () => {
             </div>
           </div>
           <div className="bg-[#14181B] p-5 rounded-b-3xl flex flex-col justify-center progress-bar">
-
             {/* progress-bar-content */}
             <div className="flex justify-between items-center gap-12 px-1 md:px-5 mt-20">
               <img src={logoCN} alt="" className="md:h-10 h-5 w-40 md:w-60 " />
               <p className="flex items-center md:gap-3 gap-1 text-sm text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 font-semibold">
                 Your dream role, faster and with confidence
                 <span>
-                <FaBolt className="text-teal-500 " />
+                  <FaBolt className="text-teal-500 " />
                 </span>
               </p>
             </div>
             {/* progress-bar-1st */}
             <div className="md:px-5 px-1 py-2">
-            <div className="w-full h-1  bg-gray-600 rounded-full ">
-              <div 
-                ref={progressBarRef} 
-                className="bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
-              ></div>
-            </div>
+              <div className="w-full h-1  bg-gray-600 rounded-full ">
+                <div
+                  // ref={progressBarRef}
+                  className="bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
+                ></div>
+              </div>
             </div>
             {/* progress-bar-content */}
             <div className="flex justify-between items-center px-1 md:px-5">
-              <div className="text-3xl text-gray-100 font-semibold">
-                Others
-              </div>
-              <div>
-                Average role,under-confident
-              </div>
+              <div className="text-3xl text-gray-100 font-semibold">Others</div>
+              <div>Average role,under-confident</div>
             </div>
             {/* progress-bar-2 */}
             <div className="px-1 md:px-5 py-2">
               <div className="w-full h-1  bg-gray-600 rounded-full">
-                <div  
-                 className="bg-gradient-to-r from-slate-700  to-slate-400 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
-                ref={newProgressref}>
-                </div>
+                <div
+                  className="bg-gradient-to-r from-slate-700  to-slate-400 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
+                  // ref={newProgressref}
+                ></div>
               </div>
             </div>
           </div>

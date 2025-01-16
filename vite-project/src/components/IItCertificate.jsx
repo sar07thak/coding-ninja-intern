@@ -1,6 +1,8 @@
 import React from "react";
 import bgimage from "../assets/n3.jpg";
-import iit from "../assets/iit.jpg";
+import iit1 from "../assets/pexels-pixabay-256490-1.jpg";
+import iit2 from "../assets/pexels-pixabay-289737.jpg";
+import iit3 from "../assets/pexels-pixabay-159740.jpg"
 import { FaMeta } from "react-icons/fa6";
 import { VscGithubInverted } from "react-icons/vsc";
 import { VscGraph } from "react-icons/vsc";
@@ -28,7 +30,7 @@ export const IItCertificate = () => {
 
           <div className=" flex flex-col p-2 md:w-[300px] rounded-2xl mb-8  bg-[#222222e4]">
             <img
-              src={iit}
+              src={iit1}
               alt=""
               className="shadow-md shadow-[#222] w-54 h-40 bg-cover rounded-2xl mb-12 relative"
             />
@@ -57,7 +59,7 @@ export const IItCertificate = () => {
           <div className="flex md:flex-row flex-col md:gap-20">
             <div className=" flex flex-col p-2 md:w-[300px] rounded-2xl mb-8  bg-[#222222e4]">
               <img
-                src={iit}
+                src={iit2}
                 alt=""
                 className="shadow-md shadow-[#222] w-54 h-40 bg-cover rounded-2xl mb-12 relative"
               />
@@ -81,7 +83,7 @@ export const IItCertificate = () => {
 
             <div className=" flex flex-col p-2 md:w-[300px] rounded-2xl mb-8  bg-[#222222e4]">
               <img
-                src={iit}
+                src={iit3}
                 alt=""
                 className="shadow-md shadow-[#222] w-54 h-40 bg-cover rounded-2xl mb-12 relative"
               />

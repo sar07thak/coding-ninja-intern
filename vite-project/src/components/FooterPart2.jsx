@@ -57,7 +57,7 @@ export const FooterPart2 = () => {
                    bg-gradient-to-r from-[rgba(217, 217, 217, 0)]  to-[rgba(217, 217, 217, .7)]                  animate-gradient-text"
             style={{
               backgroundImage:
-                "linear-gradient(105deg,#555555,#444444,#333333,#222222,#111111,#000000)",
+                "linear-gradient(105deg,#333333,#444444,#333333,#222222,#111111,#000000)",
               backgroundSize: "200% 200%",
             }} >
             Coding Ninjas
