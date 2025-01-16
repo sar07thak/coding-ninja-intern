@@ -10,14 +10,17 @@ import { FaDatabase } from "react-icons/fa";
 import { GiBreakingChain } from "react-icons/gi";
 import { FaPython } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
+import pyramid from "../assets/background-pyramid.webp";
 
 export const IItCertificate = () => {
   return (
     <>
       <div
-        className="relative z-[-1] bg-cover  backdrop-contrast-200 backdrop-brightness-200  bg-center "
-        style={{ backgroundImage: `url(${bgimage})` }}
+        className="bg-[#FFFBF5] pb-20 relative bg-no-repeat top-[] "
       >
+        
+          <img src={pyramid} alt=""  className="absolute bottom-0"/>
+        
         <div className="relative md:left-[260px] top-2 p-2 md:p-0 ">
           <div className="bg-[#745E39] w-40 text-center rounded-xl text-white text-sm p-1 mb-5">
             For graduates
