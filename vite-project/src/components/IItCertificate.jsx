@@ -80,7 +80,6 @@ export const IItCertificate = () => {
                 <div className="font-semibold">6 months</div>
               </div>
             </div>
-
             <div className=" flex flex-col p-2 md:w-[300px] rounded-2xl mb-8  bg-[#222222e4]">
               <img
                 src={iit3}
