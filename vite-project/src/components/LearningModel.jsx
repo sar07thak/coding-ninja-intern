@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Learn from "../assets/web_learn-33056.WEBP";
-import Excel from "../assets/web_excel-33055.WEBP";
-import Standout from "../assets/web_standout-33057.WEBP";
+import Learn from "../assets/web_learn-33056.webp";
+import Excel from "../assets/web_excel-33055.webp";
+import Standout from "../assets/web_standout-33057.webp";
 import rocket from "../assets/frame-1000003333-1-32928.jpg";
 
 
