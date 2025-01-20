@@ -19,6 +19,8 @@ export default {
     },
     backgroundImage: {
       'custom-gradient': 'linear-gradient(286deg, #262121 9.3%, #ae8975 331.33%)',
+      'nav-gradient' : 'linear-gradient(286deg,  #f97316 10%  , #ec4899 30% , #1d4ed8 40% )',
+      
     },
   },
   plugins: [

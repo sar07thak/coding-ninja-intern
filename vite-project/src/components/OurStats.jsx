@@ -5,37 +5,11 @@ import { RxCross1 } from "react-icons/rx";
 import { RiCheckFill } from "react-icons/ri";
 import logoCN from "../assets/newCn2.png";
 import { MdOutlineElectricBolt } from "react-icons/md";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import { FaBolt } from "react-icons/fa";
 
 export const OurStats = () => {
-  const progressBarRef = useRef(null);
-  const newProgressref = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      progressBarRef.current,
-      { width: "0%" },
-      {
-        width: "100%",
-        duration: 1,
-        delay: 0.3,
-        ease: "linear",
-      }
-    );
-
-  //   gsap.fromTo(
-  //     newProgressref.current,
-  //     { width: "0%" },
-  //     {
-  //       width: "70%",
-  //       delay: 0.3,
-  //       duration: 1,
-  //       ease: "power2.out",
-  //     }
-  //   );
   
-  }, []);
 
   return (
     <>
@@ -111,8 +85,17 @@ export const OurStats = () => {
           <div className="bg-[#14181B] p-5 rounded-b-3xl flex flex-col justify-center progress-bar">
             {/* progress-bar-content */}
             <div className="flex justify-between items-center gap-12 px-1 md:px-5 mt-20">
-              <img src={logoCN} alt="" className="md:h-10 h-5 w-40 md:w-60 " />
-              <p className="flex items-center md:gap-3 gap-1 text-sm text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 font-semibold">
+              <img src={logoCN} alt="" className="md:h-10 h-5 sm:h-7 w-40 sm:w-36 md:w-60 " />
+              <p
+                className="flex items-center md:gap-3 gap-1  text-sm  font-semibold text-transparent bg-clip-text 
+              bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500
+              animate-gradient-text"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(105deg,#75b469,#efce74,#fb833f,#fecc4f,#fb11e0,#fe732b,#0149ff,#01a3ff,#3e85fe,#883eec,#75b469)",
+                  backgroundSize: "200% 200%",
+                }}
+              >
                 Your dream role, faster and with confidence
                 <span>
                   <FaBolt className="text-teal-500 " />
@@ -120,11 +103,10 @@ export const OurStats = () => {
               </p>
             </div>
             {/* progress-bar-1st */}
-            <div className="md:px-5 px-1 py-2">
+            <div className="md:px-5 px-1 py-2 ">
               <div className="w-full h-1  bg-gray-600 rounded-full ">
                 <div
-                  // ref={progressBarRef}
-                  className="bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-500 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
+                className="w-full h-1 bg-nav-gradient "
                 ></div>
               </div>
             </div>
@@ -134,12 +116,12 @@ export const OurStats = () => {
               <div>Average role,under-confident</div>
             </div>
             {/* progress-bar-2 */}
-            <div className="px-1 md:px-5 py-2">
+            <div className="px-1 md:px-5 py-2 ">
               <div className="w-full h-1  bg-gray-600 rounded-full">
                 <div
-                  className="bg-gradient-to-r from-slate-700  to-slate-400 h-1 rounded-full shadow-md transition-all duration-500 ease-in-out"
-                  // ref={newProgressref}
-                ></div>
+                className="w-[60%] h-1 bg-custom-gradient "
+                >
+                </div>
               </div>
             </div>
           </div>
