@@ -49,7 +49,7 @@ Open your browser and go to `http://localhost:5173` to see the application in ac
 
 Feel free to submit issues or pull requests if you have suggestions or improvements!
 
-##visit-site-through-vite
+## visit-site-through-vite
 
 👉👉 https://coding-ninja.netlify.app/
 
