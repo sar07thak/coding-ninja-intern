@@ -36,7 +36,9 @@ export const ScrollerPart2 = () => {
                 className="w-9 h-9  absolute right-6 md:right-4 top-6 md:top-4 rounded-lg flex justify-center items-center text-xl bg-[#2D2D2D] text-gray-200"
                 onClick={handleVolume}
               >
+                <div className="relative z-10">
                 {volume ? <HiOutlineSpeakerWave /> : <HiOutlineSpeakerXMark />}
+                </div>
               </div>
               {volume ? (
                 <video src={video} autoPlay loop className="rounded-lg"></video>
